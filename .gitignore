@@ -1,0 +1,83 @@
+# Mental Health Chatbot - Python .gitignore
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Models & Checkpoints (large files)
+models/
+apps/merged_model/
+*.bin
+*.gguf
+*.safetensors
+*.pth
+*.pt
+
+# Data (privacy)
+data/*.jsonl
+data/*.csv
+logs/
+*.log
+
+# Temporary outputs
+outputs/book/
+outputs/of/
+evaluation/validation_results/*.json
+evaluation/*_results_*.json
+evaluation/*_test_*.json
+
+# RAG Database
+rag/chroma_db/
+
+# IDE
+.vscode/
+.idea/
+*.sw[op]
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+# *.ipynb  # Commented out - we want to keep analysis notebooks
+
+# Environment
+.env
+ .envrc
+
+# llama.cpp build artifacts
+llama.cpp/build/
+llama.cpp/*.o
+llama.cpp/llama-*
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+#outputs
+outputs/
+wandb/

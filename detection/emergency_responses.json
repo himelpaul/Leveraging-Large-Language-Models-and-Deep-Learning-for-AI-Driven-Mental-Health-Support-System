@@ -1,0 +1,140 @@
+{
+  "emergency_resources": {
+    "bangladesh": {
+      "crisis_hotline": "1779 (Kaan Pete Roi - মনের সহায়তা)",
+      "mental_health": "09612-732632 (Moner School)",
+      "emergency": "999",
+      "notes": "Primary hotline for Bangladesh users"
+    },
+    "us": {
+      "crisis_hotline": "988",
+      "crisis_text": "Text HOME to 741741",
+      "emergency": "911"
+    },
+    "uk": {
+      "crisis_hotline": "116 123 (Samaritans)",
+      "emergency": "999"
+    },
+    "canada": {
+      "crisis_hotline": "1-833-456-4566",
+      "emergency": "911"
+    },
+    "australia": {
+      "crisis_hotline": "13 11 14 (Lifeline)",
+      "emergency": "000"
+    },
+    "international": {
+      "crisis_hotline": "Find local resources at findahelpline.com",
+      "emergency": "Contact local emergency services"
+    }
+  },
+  
+  "response_templates": {
+    "high": {
+      "alert_message": "⚠️ HIGH RISK DETECTED ⚠️",
+      "immediate_actions": [
+        "If you are in immediate danger, please call emergency services ({emergency})",
+        "National Crisis Hotline: {crisis_hotline}",
+        "Crisis Text Line: {crisis_text}"
+      ],
+      "system_prompt_addition": "\n\n[SYSTEM ALERT: High-risk content detected. Prioritize user safety. Encourage immediate professional help. Be empathetic but direct about seeking emergency support.]",
+      "follow_up": "I'm here to listen, but it's really important that you talk to a professional crisis counselor right now. They are trained to help in these situations."
+    },
+    
+    "medium": {
+      "alert_message": "⚠️ Distress Detected",
+      "immediate_actions": [
+        "If you're struggling, consider reaching out to a crisis counselor: {crisis_hotline}",
+        "You can also text HOME to {crisis_text} to connect with a crisis counselor"
+      ],
+      "system_prompt_addition": "\n\n[ALERT: User showing signs of moderate distress. Provide empathetic support and suggest professional resources. Monitor for escalation.]",
+      "follow_up": "I hear that you're going through a really difficult time. While I'm here to support you, talking to a mental health professional could provide the help you need."
+    },
+    
+    "low": {
+      "alert_message": "",
+      "immediate_actions": [],
+      "system_prompt_addition": "\n\n[Note: User expressing mild distress. Provide supportive, empathetic responses. Normalize seeking help.]",
+      "follow_up": "It sounds like things are tough right now. I'm here to listen and support you."
+    }
+  },
+  
+  "de_escalation_prompts": {
+    "high": [
+      "You are speaking with someone in crisis. Your primary goal is to keep them safe and encourage them to seek immediate professional help.",
+      "Validate their feelings without judgment.",
+      "Ask about immediate safety: 'Are you safe right now?'",
+      "Encourage connection: 'Is there someone you trust who can be with you right now?'",
+      "Emphasize temporary nature of feelings: 'These feelings can feel overwhelming, but they are temporary. Help is available.'",
+      "Provide specific resources and phone numbers.",
+      "Do NOT say things like 'it will get better' or 'think positive' - these minimize their pain."
+    ],
+    
+    "medium": [
+      "The person is experiencing significant distress but not immediate crisis.",
+      "Validate their feelings completely.",
+      "Ask open-ended questions to understand their situation.",
+      "Gently suggest professional support without being pushy.",
+      "Provide coping strategies they can try now.",
+      "Check in on their support system: 'Who in your life knows you're struggling?'",
+      "Normalize seeking professional help."
+    ],
+    
+    "low": [
+      "Provide empathetic, supportive responses.",
+      "Help them identify specific stressors.",
+      "Suggest evidence-based coping strategies.",
+      "Validate that what they're feeling is real and valid.",
+      "Provide resources for continued support if they need it."
+    ]
+  },
+  
+  "recommended_coping_strategies": {
+    "immediate": [
+      "Grounding technique: Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste",
+      "Deep breathing: Breathe in for 4, hold for 4, out for 4, hold for 4",
+      "Cold water: Splash cold water on your face or hold ice cubes",
+      "Movement: Go for a short walk, even if just around your room",
+      "Reach out: Text or call someone you trust"
+    ],
+    
+    "short_term": [
+      "Journaling your thoughts and feelings",
+      "Progressive muscle relaxation",
+      "Listening to calming music or sounds",
+      "Engaging in a creative activity",
+      "Connecting with a friend or family member"
+    ],
+    
+    "long_term": [
+      "Regular therapy or counseling",
+      "Establish healthy sleep routine",
+      "Regular physical activity",
+      "Mindfulness or meditation practice",
+      "Building a support network",
+      "Limiting alcohol and substance use"
+    ]
+  },
+  
+  "llm_safety_guidelines": {
+    "always_do": [
+      "Take all expressions of suicidal ideation seriously",
+      "Provide crisis resources proactively",
+      "Validate feelings without judgment",
+      "Encourage professional help",
+      "Ask about immediate safety",
+      "Express care and concern"
+    ],
+    
+    "never_do": [
+      "Give medical advice or diagnose conditions",
+      "Promise confidentiality (you may need to report risk)",
+      "Minimize their feelings ('it's not that bad', 'others have it worse')",
+      "Offer simplistic solutions ('just think positive')",
+      "Make it about yourself ('I know how you feel')",
+      "Pressure them to explain themselves",
+      "Use 'should' statements ('you should'...)",
+      "Make assumptions about their situation"
+    ]
+  }
+}
