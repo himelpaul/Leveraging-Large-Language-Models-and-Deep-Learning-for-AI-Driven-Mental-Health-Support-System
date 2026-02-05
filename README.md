@@ -1155,14 +1155,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-**Note:** The Llama 3.2 model is subject to Meta's Llama Community License Agreement. Please review the license before commercial use.
-
----
-
-**Last Updated:** January 2026  
-**Version:** 1.0.0  
-**Status:** ✅ Thesis Complete - Ready for Defense
-
----
-
