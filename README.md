@@ -4,10 +4,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Status: Completed](https://img.shields.io/badge/Status-Thesis%20Ready-success.svg)]()
 
-**Author:** [Your Name]  
-**Institution:** [Your University]  
-**Status:** ✅ All Supervisor Feedback Addressed (January 2026)  
-**Ready for:** Thesis Defense
+**Author:** Himel Paul  
+**Institution:** [Green University of Bangladesh]  
 
 ---
 
